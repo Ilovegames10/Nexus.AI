@@ -86,4 +86,4 @@ def ask_nexus():
     return render_template('index.html', response=full_response, user_text=user_input)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000)
